@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <a href="#"><img src="./IMAGES/logo.png" alt="logo" /></a>
+      <div class="navMenu" id="navMenu">
+        <i class="bx bx-window-close" onclick="closeMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="bx bx-menu" onclick="openMenu()"></i>
+    </header>
+    <!-----------------sub-header session--------------------->
+    <section class="sub-header" id="sub-header">
+      <h1>Recent <span>Projects</span></h1>
+    </section>
+
+    <!-------------------Portfolio Section-------------------->
+    <section class="portfolio" id="portfolio">
+      <div class="sub-text-title">
+        <h2>Website Development <span>Projects</span></h2>
+      </div>
+      <div class="portfolio-content">
+        <div class="row">
+          <img
+            src="./IMAGES/project-1.png"
+            alt="Business Website Development"
+          />
+          <div class="cover">
+            <h5>Business Website Development</h5>
+            <p>
+              A modern, responsive and user-friendly business website designed
+              to establish a strong online presence. It features an attractive
+              interface, easy navigation, fast loading speed and mobile-friendly
+              layouts to help businesses showcase their services and connect
+              with potential customers.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <img
+            src="./IMAGES/project-2.png"
+            alt="Task Management Web Application"
+          />
+          <div class="cover">
+            <h5>Task Management Web Application</h5>
+            <p>
+              A productivity-focused web application designed to help users
+              organize daily activities, manage tasks, set priorities and
+              monitor their progress through a simple and interactive interface.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="sub-text-title">
+        <h2>Data Analysis <span>Projects</span></h2>
+      </div>
+      <div class="portfolio-content">
+        <div class="row">
+          <img src="./IMAGES/project-3.png" alt="Sales Performance Analysis" />
+
+          <div class="cover">
+            <h5>Sales Performance Analysis</h5>
+            <p>
+              An analytical project focused on examining sales records,
+              identifying business trends, monitoring revenue performance and
+              presenting useful insights through interactive dashboards and
+              visual reports.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <img src="./IMAGES/project-4.png" alt="Customer Insights Dashboard" />
+          <div class="cover">
+            <h5>Customer Insights & Business Analytics</h5>
+            <p>
+              A data analysis project designed to understand customer behaviour,
+              purchasing patterns and business performance. It transforms raw
+              customer data into meaningful insights that support better
+              business decisions.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="sub-text-title">
+        <h2>Training & Education <span>Projects</span></h2>
+      </div>
+      <div class="portfolio-content">
+        <div class="row">
+          <img
+            src="./IMAGES/project-5.png"
+            alt="Digital Skills Learning Platform"
+          />
+          <div class="cover">
+            <h5>Digital Skills Learning Platform</h5>
+            <p>
+              A learning platform designed to introduce individuals to essential
+              digital skills, including web development, data analysis and other
+              technology-related skills through an accessible learning
+              environment.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <img
+            src="./IMAGES/project-6.png"
+            alt="Beginner Web Development Training"
+          />
+          <div class="cover">
+            <h5>Beginner Web Development Training</h5>
+            <p>
+              A practical training programme designed to introduce beginners to
+              website development through guided lessons, hands-on exercises and
+              practical projects using HTML, CSS and JavaScript.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------------footer-------------------->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>ARG <span>Technologies</span></h2>
+          <p>Empowering Businesses Through Technology.</p>
+        </div>
+        <div class="footer-social">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/ridwanullah.abdulganiyy"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/ridorh_sen?"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/ridwan-abdul-ganiyy-9b6376315?"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://github.com/abdulganiyyridwanolamide-source"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ARG Technologies. All Rights Reserved.</p>
+        <a href="#sub-header">Back to Top <i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+    <!--------------js for toggle menu---------->
+    <script>
+      var navMenu = document.getElementById("navMenu");
+
+      function openMenu() {
+        navMenu.style.right = "0";
+      }
+
+      function closeMenu() {
+        navMenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

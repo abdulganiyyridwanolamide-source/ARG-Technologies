@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <a href="#"><img src="./IMAGES/logo.png" alt="logo" /></a>
+      <div class="navMenu" id="navMenu">
+        <i class="bx bx-window-close" onclick="closeMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="bx bx-menu" onclick="openMenu()"></i>
+    </header>
+    <!-----------------sub-header session--------------------->
+    <section class="sub-header" id="sub-header">
+      <h1><span>My</span> Services</h1>
+    </section>
+
+    <!-----------------Services Section----------->
+    <section class="services" id="services">
+      <div class="text-title">
+        <h2>What I <span>Do?</span></h2>
+      </div>
+      <div class="services-content">
+        <div class="box">
+          <div class="icons">
+            <i class="bx bx-code-alt"></i>
+          </div>
+          <h3>Website Development</h3>
+          <p>
+            I create modern, responsive, and visually appealing websites that
+            give businesses and individuals a strong online presence. From
+            personal portfolios to business websites and web applications, I
+            focus on delivering functional, user-friendly, and well-structured
+            digital experiences that meet users' needs and business objectives.
+          </p>
+          <a href="#" class="btn">Start a project</a>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <i class="bx bx-bar-chart-alt-2"></i>
+          </div>
+          <h3>Data Analysis</h3>
+          <p>
+            I help transform raw and complex data into meaningful information
+            that drives smarter decisions. Through data cleaning, analysis,
+            visualization, and reporting, I uncover valuable patterns, identify
+            trends, and present insights that help businesses understand their
+            performance, solve problems, and discover opportunities for growth.
+          </p>
+          <a href="#" class="btn">Start a project</a>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <i class="bx bx-book-open"></i>
+          </div>
+          <h3>Training & Education</h3>
+          <p>
+            I provide practical technology training designed to equip
+            individuals with relevant digital knowledge and hands-on experience.
+            Through structured lessons, guided exercises, and real-world
+            projects, I help learners develop valuable skills, build confidence,
+            and prepare themselves for academic, professional, and
+            entrepreneurial opportunities in the digital world.
+          </p>
+          <a href="#" class="btn">Start a project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="others">
+      <div class="sub-text-title">
+        <h2><span>Other</span> Services</h2>
+      </div>
+      <div class="other-img">
+        <img src="./IMAGES/training.png" alt="others" />
+        <span class="circle-spin"></span>
+      </div>
+      <div class="other-text">
+        <h3>Web Development <span>Training</span></h3>
+        <p>
+          Learn to design and build responsive, user-friendly websites through
+          practical training in HTML, CSS, JavaScript, and modern web
+          technologies. Develop real-world skills through hands-on projects and
+          guided learning.
+        </p>
+      </div>
+      <div>
+        <a href="#" class="btn">Enroll now</a>
+      </div>
+    </section>
+
+    <!------------------------footer-------------------->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>ARG <span>Technologies</span></h2>
+          <p>Empowering Businesses Through Technology.</p>
+        </div>
+        <div class="footer-social">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/ridwanullah.abdulganiyy"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/ridorh_sen?"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/ridwan-abdul-ganiyy-9b6376315?"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://github.com/abdulganiyyridwanolamide-source"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ARG Technologies. All Rights Reserved.</p>
+        <a href="#sub-header">Back to Top <i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+    <!--------------js for toggle menu---------->
+    <script>
+      var navMenu = document.getElementById("navMenu");
+
+      function openMenu() {
+        navMenu.style.right = "0";
+      }
+
+      function closeMenu() {
+        navMenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

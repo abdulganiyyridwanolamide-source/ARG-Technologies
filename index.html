@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <a href="#"><img src="./IMAGES/logo.png" alt="logo" /></a>
+      <div class="navMenu" id="navMenu">
+        <i class="bx bx-window-close" onclick="closeMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="bx bx-menu" onclick="openMenu()"></i>
+    </header>
+
+    <!-------------------------home session------------------->
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="show">
+          <span class="first">Hello</span>
+          <span class="second">I'm</span>
+        </div>
+        <h1>Abdul-Ganiyy Ridwan</h1>
+        <h3>Design <span>Technologist</span></h3>
+        <p>
+          We are design technologists with a passion for creating innovative and
+          user-friendly digital experiences. With a strong background in both
+          design and technology, I bridge the gap between creativity and
+          functionality.
+        </p>
+        <div class="button">
+          <a href="#" class="btn">About Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------footer-------------------->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>ARG <span>Technologies</span></h2>
+          <p>Empowering Businesses Through Technology.</p>
+        </div>
+        <div class="footer-social">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/ridwanullah.abdulganiyy"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/ridorh_sen?"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/ridwan-abdul-ganiyy-9b6376315?"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://github.com/abdulganiyyridwanolamide-source"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ARG Technologies. All Rights Reserved.</p>
+        <a href="#home">Back to Top <i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+    <!--------------js for toggle menu---------->
+    <script>
+      var navMenu = document.getElementById("navMenu");
+
+      function openMenu() {
+        navMenu.style.right = "0";
+      }
+
+      function closeMenu() {
+        navMenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
